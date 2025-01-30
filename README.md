@@ -17,10 +17,10 @@ O projeto ainda não está completo, porém abaixo está tudo que foi planejado,
 ![image](https://github.com/user-attachments/assets/8a9d6bbd-2f5f-45ff-b511-cd5217f591e9)
 
 ## Requisitos
-- Barra de Pesquisa - [x] Tarefa concluída
+- Barra de Pesquisa [x] Tarefa concluída
 - Detalhes do Produto (Não Concluído)
 - Carrinho de Compras (Em Conclusão)
-- Preços - [x] Tarefa concluída
+- Preços [x] Tarefa concluída
 - Valor do Produto + Valor de Entrega (Não Concluído)
   **Última Atualização no dia 25/01/2025**
 
