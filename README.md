@@ -12,3 +12,16 @@ O projeto ainda não está completo, porém abaixo está tudo que foi planejado,
 ## Diagrama de Casos de Uso
 ![image](https://github.com/user-attachments/assets/8a9d6bbd-2f5f-45ff-b511-cd5217f591e9)
 
+## Requisitos
+- Item 1
+- Item 2
+- Item 3
+- Item 4
+- Item 5
+  Barra de Pesquisa
+  Detalhes do Produto
+  Carrinho de Compras
+  Preços
+  Valor do Produto
+  
+
