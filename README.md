@@ -12,6 +12,8 @@ O projeto ainda não está completo, porém abaixo está tudo que foi planejado,
 
 [📁 Ver pasta CSS](./CSS)
 
+[📁 Ver pasta JS](./JAVASCRIPT)
+
 
 ## Model Canvas
 ![image](https://github.com/user-attachments/assets/e7870084-f9c7-4cfc-b04d-be5b3340986c)
