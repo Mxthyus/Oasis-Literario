@@ -1,5 +1,5 @@
 # Oasis-Literario
-## Projeto ADS - Sistema Funcional - Site Livraria
+# Projeto ADS - Sistema Funcional - Site Livraria
 Nesse projeto, utilizamos a linguagem de marcação **HTML**, juntamento com o uso de **CSS** e da linguagem **JAVASCRIPT** para fazer um web site focado no ramo literário. 
 
 ## MODEL CANVAS
