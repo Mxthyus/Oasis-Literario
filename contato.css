@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/*
+    Fontes
+*/
+  
+  @font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  }              
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  h1 {
+
+    margin: 100px;
+    color: #ffffff;
+    text-align: center;
+
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#ffffff, #ffffff) ;
+    color: rgb(255, 251, 251);
+    transition: .5s;
+}
+
+/*Acima o corpo do texto obviamente né mds
+ Também muda a cor de fundo, é isso pae
+*/
+
+    
+    
+.container{
+        max-width: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -37px;
+        padding: -50px;
+        border-radius: 100px;
+        
+}
+    
+/* Efeito de hover no link */
+.container .logo a:hover {
+    border: 1px solid #ffffff; /* Borda verde quando o mouse passar por cima */
+    transition: all 0.3s ease; /* Transição suave para os efeitos */
+}
+
+/* Efeito de hover na imagem */
+.container .logo img:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a imagem ao passar o mouse */
+    transition: all 0.3s ease; /* Transição suave para os efeitos */
+}
+    
+    header{
+        background-color: #077685;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0px 3px 10px #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+    }
+    
+    
+    main {
+        padding-top: 80px; /* Espaço para o menu fixo */
+        margin-top: 80px;
+    }
+
+    .home-icon {
+        margin-left: 80px;
+    }
+    
+    .home-icon img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .logo{
+        width: 5%;
+        padding: 10px;
+        margin: 15px;
+
+
+
+    }
+    
+    .menu{
+        width: 90% ;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
+        gap: 15px;
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(#088b9c, #ffffff) ;
+            color: rgb(255, 251, 251);
+            transition: .5s;
+
+    }
+
+    nav a .logo{
+        width: 5%;
+       padding: 10px;
+       margin: 15px;
+    }
+    
+    
+    .logo{
+        width: 25px;
+    }
+    
+    .logo img{
+        width: 110px;
+    }
+}
+
+.menu nav a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px; /* Espaçamento ao redor do texto */
+    font-size: 18px;
+    position: relative;
+    margin-top: 20px;
+    left: 110px;
+    font-family: Poppins-Regular;
+    border: 2px solid transparent; /* Borda invisível inicial */
+    border-radius: 5px; /* Bordas arredondadas para os links */
+    transition: all 0.3s ease; /* Transição suave para os efeitos */
+}
+
+/* Efeito de hover nos links */
+.menu nav a:hover {
+    border: 2px solid #ffffff; /* Adiciona borda verde quando o mouse passa por cima */
+    /*background-color: #4CAF50;  Muda a cor de fundo para verde */
+    color: white; /* Muda a cor do texto para branco */
+    border-radius: 10px;
+}
+
+nav a .logo{
+    width: 5%;
+   padding: 30px;
+   margin: 15px;
+}
+
+.menu nav a::after{
+    content: "";
+    width: 50px;
+    height: 5px;
+    
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: flex;
+}
+
+.menu nav a:hover::after{
+    width: 20px;
+}
+
+.logo{
+    width: 25px;
+}
+
+.logo img{
+    width: 100px;
+}
+/*esse aumenta a imagem ksksk - davi*/
+
+
+.login-button button {
+    border: none;
+    background-color: #077685;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    line-height: 10px;
+    position: absolute;
+    top: 37px;
+    right: 100px;
+    font-size: 18px;
+    font-family: Poppins-Regular;
+    border: 1px solid transparent;
+    transition: all 0.3s ease; /* Transição suave para os efeitos *
+    
+    
+    /*Deivid, provavelmente é tu que vai arrumar isso, mas só pra deixar avisado q aq
+    é o botão de login(entrar) e eu quero colocar ele pra direita do menu personalizado*/
+}
+
+
+.login-button button:hover {
+    border: 2px solid #ffffff; /* Adiciona borda verde quando o mouse passa por cima */
+    color: #000000; /* Muda a cor do texto para verde */
+    /* background-color: white; Muda a cor de fundo para branco */
+    border-radius: 10px;
+}
+
+
+.login-button button a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+    line-height: 10px;
+    
+
+}
+
+/* Estilos gerais do carrinho de compras */
+.Carrinho-Compras {
+    position: absolute;
+    top: -5px;
+    right: 70px;
+    display: inline-block;
+    width: 50px; /* Ajuste a largura do carrinho */
+    height: 30px; /* Ajuste a altura do carrinho */
+    margin: 0px; /* Espaçamento em torno do carrinho */
+    background-color: transparent;
+    border: none;
+}
+
+/* Estiliza o botão */
+.Carrinho-Compras button {
+    background-color: transparent;
+    border: none;
+    padding: 50px;
+    cursor: pointer;
+}
+
+/* Imagem do carrinho */
+.Carrinho-Compras img {
+    width: 40px; /* Ajuste o tamanho da imagem */
+    height: 40px; /* Ajuste o tamanho da imagem */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Efeito de transição para a imagem */
+    background-color: transparent;
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+.Carrinho-Compras img:hover {
+    transform: scale(1.2); /* Aumenta a imagem */
+    opacity: 0.5; /* Dá uma leve transparência */
+    background-color: transparent;
+}
+
+/* Estilo do link dentro do botão */
+.Carrinho-Compras a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor do texto */
+    background-color: transparent;
+}
+
+/* Icone do carrinho com a fonte (se aplicável) */
+.Carrinho-Compras .fas {
+    font-size: 10px; /* Ajuste o tamanho do ícone */
+    color: #333; /* Cor do ícone */
+    background-color: transparent;
+}
+
+
+/*acima tem a porcaria do carrinho de compras*/
+
+
+.search-box{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, 135%);
+    background: #ffffff;
+    height: 40px;
+    padding: 10px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*caixa de pesquisa, ou a barra né*/
+
+.search-txt{
+    border: none;
+    background: none;
+    outline:none;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 10px;
+    width: 0;
+    transition: .5s;
+}
+
+/*
+Matheus ou Deivid do futuro,
+
+acima é pra deixar a barra de pesquisa animada,
+
+então se n for usar...
+
+Tira ué
+*/
+
+::-webkit-input-placeholder {
+    color: #000000;
+}
+
+/* isso aí é pra mudar a cor do placeholder, ou onde tá escrito ''pesquisa'' */
+
+.search-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+/*
+Acima o botão a barra de pesquisa em si
+
+e abaixo ainda deixando a barra animada. 
+
+Enfâse no AINDA
+*/
+
+.search-box:hover > .search-txt {
+    width: 300px;
+    padding: 0 6px;
+    /* O 0px é na vertical e o 6px é pra horizontal, o padding permite isso, okay? */
+}
+
+/*SIM, AINDA TÁ ANIMANDO A BARRA DE PESQUISA*/
+
+.search-box:hover > .search-btn {
+    background: #ffffff;
+
+}
+
+
+/*Matheus daqui a 3 hrs, falta vc colocar a aba de configs. A Elisa me desconcentrou e 
+eu me perdi um pouco nas ideias. 
+Falta a aba de configs, o carrinho de compras, e por enquanto é isso. 
+Depois é só deixar funcionar, tem que estudar pra linguagens. */
+
+
+.container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.caixa {
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    width: 150px;
+    margin: 90px;
+    padding: -70px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    color: #000000;
+}
+
+.caixa img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.caixa button{
+    z-index: 1;
+}
+h3 {
+    font-size:medium;
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+
+p {
+    color: #050505;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.trilho{
+    width: 350px;
+    height: 150px;
+    background-color: #84a102 ;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+    left: 70%;
+    padding: 0px;
+}
+
+.trilho .indicador{
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(.7);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+.trilho.trilho.dark{
+    background-color: rgb(0, 0, 0);
+}
+
+.trilho.dark .indicador{
+    left: 200px;
+    background-color: #000000;
+}
+
+
+
+body.dark{
+    background-color: rgb(255, 255, 255);
+}
+
+body.dark h1{
+    color: #000000 ;
+}
+
+ISSO DAQUI È UM PROTOTIPO DE MODO ESCURO E CLARO
+*/
+
+
+
+
+/*Para meu grupo:
+Gostaria de pontuar algumas coisas que precisamos fazer, a primeira delas seria com relação a Home.
+A segunda com relação a ajeitar o botão de entrar.
+A terceira a parte abaixo do menu do nosso site, onde iriam vir as sugestões rápidas de pesquisa.
+A quarta seria o banco de dados que ainda não existe.*
+
+
+JavaScript q copiei quando criei o banco de dados, vai q precisa
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if
+          request.time < timestamp.date(2025, 1, 8);
+    }
+  }
+}
+
+/

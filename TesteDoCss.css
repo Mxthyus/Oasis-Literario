@@ -1,0 +1,356 @@
+/*Esse css é pra apenas a pag de login, okay? E isso dai são as cores paizao*/
+:root {
+    --test-color:#ffffff;
+    --main-color: #000000;
+    --link-color: #ffffff;
+    --text1: #ffffff;
+    --highligth-text: #ffffff;
+    --input-text: #111111;;
+    --white-color: #ffffff;
+    --point-list: #070707;
+    --line-input: #fffdfd;
+  }
+  
+* {
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+
+    /*achei num projeto antigo, n entendi mt pra q serve*/
+
+}
+
+body {
+    margin: 300px;
+    right: 50%;
+    top: 50%;
+    background: #077685;
+    color: rgb(255, 251, 251);
+    /*estrutura do corpo obviamente*/
+
+}
+
+.container{
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -30px;
+    padding: -50px;
+    border: none;
+    border-radius: 100px; 
+    z-index: 1000;
+    position: relative;
+    font-size: 20px;
+    padding: 10px 25px;
+    
+    /*resumindo, tudo clicavel que está no meio da tela*/
+    
+}
+
+
+.logo{
+    position: fixed;
+    left: 33.5%;
+    top: 15%;
+    opacity: 20%;
+    position: absolute;
+    
+    /*logo do site por trás dos botoes de login*/
+
+}
+    
+
+
+.login-form-btn{
+    border-radius: 10px; 
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    line-height: 1.5;
+    flex-wrap: wrap;
+    min-height: 0vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+
+    /* botao de entrar e suas caracteristicas*/
+
+}
+
+
+
+
+/*abaixo a parte do codigo antigo em formato comentario, dps ve qual fica melhor*/
+
+/*.container-login-form-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-form-btn {
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: var(--white-color);
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    transition: all 0.4s;
+    z-index: 1000;
+    position: relative;
+  }
+  
+  .login-form-btn:hover  {
+    background-color: var(--highligth-text);
+  }
+*/
+
+/*-------------------------------------------------------------*/
+
+
+/*a partir daqui eu entendi um pouco do meu codigo antigo e resolvi copiar e colar, ent NAO SEI DE MAIS NADA
+
+.text1 {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: var(--text1);
+    line-height: 1;
+  }
+  
+  .text2 {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: var(--main-color);
+    line-height: 1;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: Poppins-Regular, sans-serif;
+}
+
+ul, li {
+    margin: 20px;
+    list-style-type: none;
+}
+
+input, button {
+    outline: none !important;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.login-form {
+    width: 100%;
+  }
+  
+  .login-form-title {
+    display: block;
+    font-family: Poppins-Bold;
+    font-size: 30px;
+    color: var(--highligth-text);
+    line-height: 2;
+    text-align: center;
+  }
+  
+  .wrap-input {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid var(--line-input);
+  }
+  
+  .input-form {
+    font-family: Poppins-SemiBold;
+    font-size: 18px;
+    color: var(--input-text);
+    line-height: 3;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    padding: 0 10px;
+  }
+  
+  .focus-input-form {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .focus-input-form::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    transition: all 0.4s;
+    background: var(--main-color);
+  }
+  
+  .focus-input-form::after {
+    font-family: Poppins-Medium;
+    font-size: 18px;
+    color: var(--text1);
+    line-height: 2.5;
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    padding-left: 0px;
+    transition: all 0.7s;
+  }
+  
+  .input-form:focus + .focus-input-form::after {
+    top: -20px;
+    font-size: 15px;
+  }
+  
+  .input-form:focus + .focus-input-form::before {
+    width: 100%;
+  }
+  
+  .has-val.input-form + .focus-input-form::after {
+    top: -20px;
+    font-size: 15px;
+  }
+  
+  .has-val.input-form + .focus-input-form::before {
+    width: 100%;
+  }
+
+  /*
+    Links - Login utils
+
+  
+  a {
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--link-color);
+    margin: 100px;
+    transition: all 0.7s;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+  color: var(--highligth-text);
+}
+
+/*
+  Login utils
+
+
+.login-utils {
+  margin-top: 40px;
+}
+
+.login-utils li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.login-utils li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: var(--point-list);
+  top: 45%;
+  transform: translateY(-50%);
+  left: 0;
+}
+#customBtn {
+display: inline-block;
+background: #000000;
+color: white;
+width: 250px;
+border-radius: 5px;
+white-space: nowrap;
+}
+#customBtn:hover {
+cursor: pointer;
+}
+span.label {
+font-weight: bold;
+}
+span.icon {
+background: url('https://google-developers.appspot.com/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+display: inline-block;
+vertical-align: middle;
+width: 42px;
+height: 42px;
+border-right: #2265d4 1px solid;
+}
+span.buttonText {
+display: inline-block;
+vertical-align: middle;
+padding-left: 60px;
+padding-right: 20px;
+font-size: 17px;
+font-weight: bold;
+font-family: 'Roboto', sans-serif;
+}
+
+
+#customBtn {
+display: inline-block;
+background: #4285f4;
+color: white;
+width: 250px;
+border-radius: 5px;
+white-space: nowrap;
+}
+#customBtn:hover {
+cursor: pointer;
+}
+span.label {
+font-weight: bold;
+}
+span.icon {
+background: url('https://google-developers.appspot.com/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+display: inline-block;
+vertical-align: middle;
+width: 42px;
+height: 42px;
+border-right: #2265d4 1px solid;
+}
+span.buttonText {
+display: inline-block;
+vertical-align: middle;
+padding-left: 42px;
+padding-right: 42px;
+font-size: 14px;
+font-weight: bold;
+
+font-family: 'Roboto', sans-serif;
+}
+*/

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolagem Horizontal com Setas</title>
+    <style>
+        .janela-com-rolagem-horizontal {
+            width: 300px; /* Largura da janela */
+            height: 100px; /* Altura da janela */
+            overflow: hidden; /* Oculta o conteúdo que está fora da área visível */
+            border: 1px solid #000; /* Adiciona uma borda */
+            position: relative; /* Para posicionar as setas de forma absoluta */
+        }
+        .conteudo {
+            width: 1000px; /* Largura maior que a da janela para forçar a rolagem */
+            display: flex; /* Permite o conteúdo se estender horizontalmente */
+            transition: transform 0.3s ease; /* Suaviza a transição ao mover */
+        }
+        .item {
+            margin-right: 10px; /* Espaçamento entre os itens */
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .seta {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .seta-esquerda {
+            left: 10px; /* Posição da seta para a esquerda */
+        }
+        .seta-direita {
+            right: 10px; /* Posição da seta para a direita */
+        }
+    </style>
+</head>
+<body>
+
+<div class="janela-com-rolagem-horizontal">
+    <div class="conteudo" id="conteudo">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+    </div>
+    <span class="seta seta-esquerda" onclick="moverEsquerda()">&#8592;</span>
+    <span class="seta seta-direita" onclick="moverDireita()">&#8594;</span>
+</div>
+
+<script>
+    let posicaoAtual = 0; // Variável para controlar a posição de rolagem
+
+    function moverEsquerda() {
+        const conteudo = document.getElementById('conteudo');
+        const larguraJanela = document.querySelector('.janela-com-rolagem-horizontal').offsetWidth;
+        const novaPosicao = posicaoAtual - larguraJanela / 3; // Desloca para a esquerda
+        if (novaPosicao >= 0) { // Evita ultrapassar o limite esquerdo
+            posicaoAtual = novaPosicao;
+            conteudo.style.transform = translateX(-${posicaoAtual}px); // Move o conteúdo
+        }
+    }
+
+    function moverDireita() {
+        const conteudo = document.getElementById('conteudo');
+        const larguraJanela = document.querySelector('.janela-com-rolagem-horizontal').offsetWidth;
+        const larguraConteudo = conteudo.scrollWidth;
+        const novaPosicao = posicaoAtual + larguraJanela / 3; // Desloca para a direita
+        if (novaPosicao <= larguraConteudo - larguraJanela) { // Evita ultrapassar o limite direito
+            posicaoAtual = novaPosicao;
+            conteudo.style.transform = translateX(-${posicaoAtual}px); // Move o conteúdo
+        }
+    }
+</script>
+
+</body>
+</html>

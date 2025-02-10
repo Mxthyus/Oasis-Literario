@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oásis Literário</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="Icon/book-_1_.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+
+    
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Seja Bem-Vindo!</h2>
+                <p class="description description-primary">Para se manter conectado conosco,</p>
+                <p class="description description-primary">Por favor, faça o login com suas informações pessoais.</p>
+                <button id="signin" class="btn btn-primary">Entrar</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Criar Conta</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                        </li>
+                        </a>
+                        
+                        <script src="https://accounts.google.com/gsi/client" async></script>
+                        <script>
+                            function handleCredentialResponse(response) {
+                            const data = jwt_decode(response.credential)
+                            fullName.textContent = data.name
+                            sub.textContent = data.sub
+                            given_name.textContent = data.given_name
+                            family_name.textContent = data.family_name
+                            email.textContent = data.email
+                            verifiedEmail.textContent = data.email_verified
+                            picture.setAttribute("src", data.picture)
+                            }
+
+                            window.onload = function () {
+                            google.accounts.id.initialize;
+                            {
+                            client_id: "786516950309-n37f4g14lar24m0odhcghd7f0s30l4qk.apps.googleusercontent.com"
+                            callback: handleCredentialResponse
+                            }
+                        }      
+
+                            google.accounts.id.renderButton(
+                            document.getElementById("buttonDiv"),
+                            { theme: "outline", size: "large" }  // customization attributes
+                            );
+                            google.accounts.id.prompt(); // also display the One Tap dialog
+                            
+                        </script>
+
+                            <div id="buttonDiv"></div>
+
+                        <div id="g_id_onload"
+                            data-client_id="786516950309-n37f4g14lar24m0odhcghd7f0s30l4qk.apps.googleusercontent.com"
+                            data-login_uri="http://localhost:5500/http://127.0.0.1:5500/login.html"
+                            data-auto_prompt="false">
+                            
+
+                        </div>
+                        <div class="g_id_signin"
+                        data-type="icon"
+                        data-size="large"
+                        data-theme="filled_black"
+                        data-text="login"
+                        data-shape="circle"
+                        data-logo_alignment="left">
+                        </div>
+                    
+
+                    
+
+                </div><!-- social media -->
+                <p class="description description-second">Ou use seu email para registrar-se:</p>
+                <form class="form">
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    
+                    
+                    <button class="btn btn-second">Registro</button>        
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Olá!</h2>
+                <p class="description description-primary">Insira seus dados pessoais</p>
+                <p class="description description-primary">e comece a jornada conosco</p>
+                <button id="signup" class="btn btn-primary">Cadastro</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Faça login</h2>
+
+
+
+                        <script src="https://accounts.google.com/gsi/client" async></script>
+                            <div id="g_id_onload"
+                            data-client_id="786516950309-n37f4g14lar24m0odhcghd7f0s30l4qk.apps.googleusercontent.com"
+                            data-login_uri="http://localhost:5500"
+                            data-auto_prompt="false">
+                            </div>
+
+                            <div class="g_id_signin"
+                            data-type="icon"
+                            data-size="large"
+                            data-theme="filled_black"
+                            data-text="login"
+                            data-shape="circle"
+                            data-logo_alignment="left">
+                            </div>
+
+
+
+
+                        
+                
+                <p class="description description-second">Ou use seu email:</p>
+                <form class="form">
+                
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                
+                    <a class="password" href="#">Esqueceu sua senha?</a>
+                    <button class="btn btn-second">Entrar</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
+    <script src="main.js"></script>
+
+
+    
+</body>
+</html>
+
